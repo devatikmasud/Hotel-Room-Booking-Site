@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore our elegant rooms and premium amenities at Maison Serenity — deluxe rooms, suites, spa, pool, fine dining, and more." />
+    <meta name="keywords" content="hotel rooms, deluxe room, suite, amenities, spa, pool, fine dining, hotel facilities" />
+    <meta property="og:title" content="Rooms & Amenities — Maison Serenity" />
+    <meta property="og:description" content="Explore our elegant rooms and premium amenities." />
+    <meta property="og:type" content="website" />
+    <title>Rooms &amp; Amenities — Maison Serenity</title>
+    <script src="./src/main.js" defer></script>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <!-- ===== Sticky Navigation ===== -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="./index.html" class="nav__logo" aria-label="Maison Serenity home"><svg class="logo__mark" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="24" cy="24" r="22.5"/><path d="M15 33V22a9 9 0 0 1 18 0v11"/><path d="M19.5 33V23a4.5 4.5 0 0 1 9 0v10"/><path d="M10 37.5c4.5-2.4 7-2.4 11.5 0s7 2.4 11.5 0 5-1.6 5-1.6"/></svg><span class="logo__text"><b>Maison</b><i>Serenity</i></span></a>
+        <ul class="nav__links" role="menubar">
+          <li role="none"><a href="./index.html" role="menuitem">Home</a></li>
+          <li role="none"><a href="./rooms.html" role="menuitem">Rooms &amp; Amenities</a></li>
+          <li role="none"><a href="./gallery.html" role="menuitem">Gallery</a></li>
+          <li role="none"><a href="./contact.html" role="menuitem">Contact</a></li>
+        </ul>
+        <div class="nav__cta">
+          <a href="#" class="btn btn--whatsapp" data-whatsapp aria-label="Chat on WhatsApp">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            WhatsApp
+          </a>
+          <a href="./contact.html" class="btn btn--primary">Book Now</a>
+        </div>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== Page Header ===== -->
+    <header class="page-header" role="banner">
+      <div class="page-header__bg">
+        <img src="https://images.pexels.com/photos/39338444/pexels-photo-39338444.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Elegant hotel bedroom with crisp white linens" />
+      </div>
+      <div class="page-header__content">
+        <p class="hero__subtitle" style="margin-bottom: 16px;">Accommodation</p>
+        <h1>Rooms &amp; Amenities</h1>
+        <p>Every room is a retreat — discover the space that suits your stay.</p>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="./index.html">Home</a>
+          <span>/</span>
+          <span>Rooms &amp; Amenities</span>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Rooms Section ===== -->
+    <section class="section" aria-labelledby="rooms-heading">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Accommodation</span>
+          <h2 id="rooms-heading">Our Rooms</h2>
+          <hr class="divider" />
+          <p class="section__intro">Each room is individually styled with curated furnishings, natural light, and premium comfort. Choose the one that feels like home.</p>
+        </div>
+
+        <div class="rooms-grid">
+          <!-- Room 1 -->
+          <article class="room-card reveal">
+            <div class="room-card__image">
+              <img src="https://images.pexels.com/photos/6434592/pexels-photo-6434592.jpeg?auto=compress&cs=tinysrgb&w=940" alt="Contemporary deluxe room with plush bedding and warm corridor lighting" loading="lazy" />
+              <p class="room-card__tag">Deluxe</p>
+            </div>
+            <div class="room-card__body">
+              <h3>Garden View Deluxe</h3>
+              <p>A bright, airy room overlooking the gardens. Wake up to natural light and the calm of greenery, with a king-size bed and a private balcony for morning coffee.</p>
+              <ul class="room-card__features">
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 32 m²</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> King Bed</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Balcony</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Garden View</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Free Wi-Fi</li>
+              </ul>
+              <a href="./contact.html" class="btn btn--secondary">Book This Room</a>
+            </div>
+          </article>
+
+          <!-- Room 2 -->
+          <article class="room-card reveal">
+            <div class="room-card__image">
+              <img src="https://images.pexels.com/photos/8082217/pexels-photo-8082217.jpeg?auto=compress&cs=tinysrgb&w=940" alt="Spacious suite with chandelier and minimalist elegant design" loading="lazy" />
+              <p class="room-card__tag">Suite</p>
+            </div>
+            <div class="room-card__body">
+              <h3>Serenity Suite</h3>
+              <p>An expansive suite with a separate lounge area, elegant chandelier, and premium furnishings. Designed for those who appreciate extra space and refined comfort.</p>
+              <ul class="room-card__features">
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 55 m²</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> King Bed</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Lounge Area</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Smart TV</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Minibar</li>
+              </ul>
+              <a href="./contact.html" class="btn btn--secondary">Book This Room</a>
+            </div>
+          </article>
+
+          <!-- Room 3 -->
+          <article class="room-card reveal">
+            <div class="room-card__image">
+              <img src="https://images.pexels.com/photos/7745929/pexels-photo-7745929.jpeg?auto=compress&cs=tinysrgb&w=940" alt="Modern bedroom with large bed, balcony access, and stylish lighting" loading="lazy" />
+              <p class="room-card__tag">Premium</p>
+            </div>
+            <div class="room-card__body">
+              <h3>Premium Balcony Room</h3>
+              <p>A stylish room with direct balcony access, modern lighting, and a luxurious en-suite bathroom. Perfect for guests who want a touch of extra luxury.</p>
+              <ul class="room-card__features">
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 40 m²</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Queen Bed</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> En-suite</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Balcony</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Free Wi-Fi</li>
+              </ul>
+              <a href="./contact.html" class="btn btn--secondary">Book This Room</a>
+            </div>
+          </article>
+
+          <!-- Room 4 -->
+          <article class="room-card reveal">
+            <div class="room-card__image">
+              <img src="https://images.pexels.com/photos/2736384/pexels-photo-2736384.jpeg?auto=compress&cs=tinysrgb&w=940" alt="Elegant bedroom with white linens and decorative lamp" loading="lazy" />
+              <p class="room-card__tag">Classic</p>
+            </div>
+            <div class="room-card__body">
+              <h3>Classic Comfort Room</h3>
+              <p>A cozy, well-appointed room with crisp white linens and a warm decorative touch. Ideal for solo travellers or couples seeking a restful night.</p>
+              <ul class="room-card__features">
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 24 m²</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Double Bed</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> En-suite</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Free Wi-Fi</li>
+              </ul>
+              <a href="./contact.html" class="btn btn--secondary">Book This Room</a>
+            </div>
+          </article>
+
+          <!-- Room 5 -->
+          <article class="room-card reveal">
+            <div class="room-card__image">
+              <img src="https://images.pexels.com/photos/24461266/pexels-photo-24461266.jpeg?auto=compress&cs=tinysrgb&w=940" alt="Cozy bedroom with elegant furniture and luxurious drapes" loading="lazy" />
+              <p class="room-card__tag">Executive</p>
+            </div>
+            <div class="room-card__body">
+              <h3>Executive Heritage Room</h3>
+              <p>A characterful room with elegant period furniture, luxurious drapes, and a warm ambience. A blend of heritage charm and modern convenience.</p>
+              <ul class="room-card__features">
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 36 m²</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> King Bed</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> En-suite</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Work Desk</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Free Wi-Fi</li>
+              </ul>
+              <a href="./contact.html" class="btn btn--secondary">Book This Room</a>
+            </div>
+          </article>
+
+          <!-- Room 6 -->
+          <article class="room-card reveal">
+            <div class="room-card__image">
+              <img src="https://images.pexels.com/photos/14547139/pexels-photo-14547139.jpeg?auto=compress&cs=tinysrgb&w=940" alt="Elegant hotel room with stylish decor, plush bedding, and warm lighting" loading="lazy" />
+              <p class="room-card__tag">Signature</p>
+            </div>
+            <div class="room-card__body">
+              <h3>Signature Suite</h3>
+              <p>Our finest accommodation, featuring plush bedding, warm ambient lighting, and a spacious layout. The ultimate in boutique luxury.</p>
+              <ul class="room-card__features">
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 65 m²</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> King Bed</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Lounge + Dining</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Jacuzzi Tub</li>
+                <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Minibar</li>
+              </ul>
+              <a href="./contact.html" class="btn btn--secondary">Book This Room</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Amenities Section ===== -->
+    <section class="section section--light" aria-labelledby="amenities-heading">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Facilities</span>
+          <h2 id="amenities-heading">Hotel Amenities</h2>
+          <hr class="divider" />
+          <p class="section__intro">Everything you need for a comfortable and memorable stay, available to all our guests.</p>
+        </div>
+
+        <div class="amenities-grid">
+          <div class="amenity-item reveal">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/><path d="M2 12a10 10 0 0020 0 10 10 0 00-20 0z"/></svg>
+            <span>Outdoor Pool</span>
+          </div>
+          <div class="amenity-item reveal">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 00-7 7c0 3 2 5 2 8h10c0-3 2-5 2-8a7 7 0 00-7-7z"/><line x1="9" y1="20" x2="15" y2="20"/></svg>
+            <span>Spa &amp; Wellness</span>
+          </div>
+          <div class="amenity-item reveal">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18M3 11l2-7h14l2 7M5 11v9a1 1 0 001 1h12a1 1 0 001-1v-9M9 16h6"/></svg>
+            <span>Fine Dining</span>
+          </div>
+          <div class="amenity-item reveal">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0114 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+            <span>Free Wi-Fi</span>
+          </div>
+          <div class="amenity-item reveal">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span>Free Parking</span>
+          </div>
+          <div class="amenity-item reveal">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v6a3 3 0 006 0V2"/><path d="M14 2v6a4 4 0 004 4 4 4 0 004-4V2"/><circle cx="12" cy="14" r="1"/><path d="M12 15v7"/></svg>
+            <span>Bar &amp; Lounge</span>
+          </div>
+          <div class="amenity-item reveal">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+            <span>Library</span>
+          </div>
+          <div class="amenity-item reveal">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
+            <span>Concierge</span>
+          </div>
+          <div class="amenity-item reveal">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>24-Hour Reception</span>
+          </div>
+          <div class="amenity-item reveal">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"/></svg>
+            <span>Air Conditioning</span>
+          </div>
+          <div class="amenity-item reveal">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v6a3 3 0 006 0V2"/><path d="M9 5v3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v6"/><path d="M15 21h6"/><path d="M18 15v6"/></svg>
+            <span>Breakfast Included</span>
+          </div>
+          <div class="amenity-item reveal">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            <span>Pet Friendly</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Pricing Table Placeholder ===== -->
+    <section class="section" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Tariff</span>
+          <h2 id="pricing-heading">Room Rates</h2>
+          <hr class="divider" />
+          <p class="section__intro">Seasonal pricing will be displayed here once finalised. The table below is a placeholder — replace the values when ready.</p>
+        </div>
+
+        <div class="reveal">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th scope="col">Room Type</th>
+                <th scope="col">Low Season</th>
+                <th scope="col">High Season</th>
+                <th scope="col">Capacity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Classic Comfort</td>
+                <td class="price">$120 / night</td>
+                <td class="price">$160 / night</td>
+                <td>2 Guests</td>
+              </tr>
+              <tr>
+                <td>Garden View Deluxe</td>
+                <td class="price">$180 / night</td>
+                <td class="price">$240 / night</td>
+                <td>2 Guests</td>
+              </tr>
+              <tr>
+                <td>Premium Balcony</td>
+                <td class="price">$220 / night</td>
+                <td class="price">$290 / night</td>
+                <td>2-3 Guests</td>
+              </tr>
+              <tr>
+                <td>Executive Heritage</td>
+                <td class="price">$260 / night</td>
+                <td class="price">$340 / night</td>
+                <td>2-3 Guests</td>
+              </tr>
+              <tr>
+                <td>Serenity Suite</td>
+                <td class="price">$380 / night</td>
+                <td class="price">$480 / night</td>
+                <td>3-4 Guests</td>
+              </tr>
+              <tr>
+                <td>Signature Suite</td>
+                <td class="price">$520 / night</td>
+                <td class="price">$680 / night</td>
+                <td>3-4 Guests</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="text-align: center; margin-top: var(--space-3); font-size: var(--font-size-sm); color: var(--color-mid-gray);">
+            Rates are indicative and per room per night, including breakfast. Taxes may apply.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA Banner ===== -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="cta-banner__bg">
+        <img src="https://images.pexels.com/photos/38683460/pexels-photo-38683460.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="" loading="lazy" />
+      </div>
+      <div class="cta-banner__content container">
+        <h2 id="cta-heading">Found the Perfect Room?</h2>
+        <p>Send us a message and we will check availability for your dates right away.</p>
+        <div class="cta-banner__buttons">
+          <a href="./contact.html" class="btn btn--primary btn--lg">Book Your Stay</a>
+          <a href="#" class="btn btn--whatsapp btn--lg" data-whatsapp>
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Message on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col">
+            <span class="footer__logo"><svg class="logo__mark" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="24" cy="24" r="22.5"/><path d="M15 33V22a9 9 0 0 1 18 0v11"/><path d="M19.5 33V23a4.5 4.5 0 0 1 9 0v10"/><path d="M10 37.5c4.5-2.4 7-2.4 11.5 0s7 2.4 11.5 0 5-1.6 5-1.6"/></svg><span class="logo__text"><b>Maison</b><i>Serenity</i></span></span>
+            <p>A boutique hotel designed for rest, renewal, and refined hospitality. Your sanctuary away from the everyday.</p>
+            <div class="footer__social">
+              <a href="#" aria-label="Facebook"><svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+              <a href="#" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+              <a href="#" aria-label="Twitter"><svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./rooms.html">Rooms &amp; Amenities</a></li>
+              <li><a href="./gallery.html">Gallery</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#" data-email>stay@yourhotel.com</a></li>
+              <li><a href="#" data-whatsapp>WhatsApp Us</a></li>
+              <li>+1 (555) 123-4567</li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Address</h4>
+            <p>123 Coastal Avenue<br />Seaside Town, ST 12345<br />United States</p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 Maison Serenity. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== WhatsApp Float Button ===== -->
+    <a href="#" class="whatsapp-float" data-whatsapp aria-label="Chat with us on WhatsApp">
+      <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+  </body>
+</html>
